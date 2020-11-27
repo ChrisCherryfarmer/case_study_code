@@ -1,0 +1,18 @@
+<h1>Fach bearbeiten</h1>
+<table>
+  <tr>
+    <td>Artikel wählen</td>
+    <td><select [id]="artikelList">
+      <option *ngFor="let artikel of artikelList">{{artikel.name}}</option>
+    </select></td>
+  </tr>
+
+  <tr>
+    <td>Anzahl wählen</td>
+    <td><input type="number"/></td>
+  </tr>
+
+
+</table>
+
+<button>Fach speichern</button>

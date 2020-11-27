@@ -1,0 +1,16 @@
+<h1>Artikelliste</h1>
+<button (click)="createArtikel()">Artikel anlegen</button>
+<table>
+  <tr>
+    <th>Artikelnummer</th>
+    <th>Name</th>
+    <th>Beschreibung</th>
+    <th>Aktion</th>
+  </tr>
+  <tr *ngFor="let item of artikelList">
+    <td>{{item.artikelnummer}}</td>
+    <td>{{item.name}}</td>
+    <td>{{item.beschreibung}}</td>
+    <td><button>Editieren</button></td>
+  </tr>
+</table>

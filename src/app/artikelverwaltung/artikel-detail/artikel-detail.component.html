@@ -1,0 +1,17 @@
+<h1>Artikel anlegen</h1>
+<table>
+  <tr>
+    <td>Artikelnummer</td>
+    <td><input type="text" [(ngModel)]="artikelnummer"/></td>
+  </tr>  <tr>
+    <td>Name</td>
+    <td><input type="text" [(ngModel)]="name"/></td>
+  </tr>
+  <tr>
+    <td>Beschreibung</td>
+    <td><textarea [(ngModel)]="beschreibung"></textarea></td>
+  </tr>
+
+  <button (click)="saveArtikel()">Artikel speichern</button>
+
+</table>

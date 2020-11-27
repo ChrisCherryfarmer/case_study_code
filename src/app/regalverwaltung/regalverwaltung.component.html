@@ -1,0 +1,15 @@
+<h1>Regalverwaltung</h1>
+
+<div class="table-container">
+  <table>
+    <tr *ngFor="let ebene of ebenen;  let i = index">
+      <td>Ebene {{i+1}}</td>
+      <td *ngFor="let fach of ebene.faecher; let j = index">
+
+        <div>Fach  {{j+1}}</div>
+        <div (click)="openFach()" class="fach" [ngClass]="{'belegt': fach.istBelegt}">Fach Belegt: {{fach.istBelegt}}</div>
+      </td>
+
+    </tr>
+  </table>
+</div>

@@ -1,0 +1,29 @@
+
+
+  table {
+    border: 1px solid grey;
+
+    tr {
+      height: 25px;
+      border: 1px solid grey;
+
+      td {
+        border: 1px solid grey;
+        width: 250px;
+
+        .fach {
+          color: #ffffff;
+          width: 100px;
+          background: green;
+
+          &.belegt {
+            background: darkred;
+          }
+        }
+      ;
+      }
+    }
+  }
+
+
+
